@@ -11,8 +11,8 @@ from FindTheBestModel import calculate_total_and_average_scores
 
 client = AzureOpenAI(
     api_version="2024-02-15-preview",
-    api_key="f8c3f26d14ff4876ab9a7d23251337d5",
-    azure_endpoint="https://foxbrainopenaiapieastus.openai.azure.com",
+    api_key="Your Key",
+    azure_endpoint="https://Your Endpoint",
 )
 
 def llm_call(messages, model="gpt-4o"):
