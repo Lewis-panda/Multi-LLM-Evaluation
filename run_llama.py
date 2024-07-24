@@ -8,8 +8,7 @@ from langchain_community.llms import Ollama
 # 設置模型和對應的主機
 model = "llama3:70b-instruct-q5_K_M"
 model_name = "llama3"
-host = "http://13.65.249.11:6665"
-
+host = "http://YourHost"
 
 # 初始化 prompt 集合
 prompt_sets = []
