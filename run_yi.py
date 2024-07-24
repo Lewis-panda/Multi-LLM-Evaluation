@@ -8,7 +8,7 @@ from langchain_community.llms import Ollama
 # 設置模型和對應的主機
 model = "yi:34b-v1.5"
 model_name = "yi"
-host = "http://13.65.249.11:8885"
+host = "http://YourHost"
 
 # 初始化 prompt 集合
 prompt_sets = []
