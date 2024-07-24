@@ -8,7 +8,7 @@ from langchain_community.llms import Ollama
 # 設置模型和對應的主機
 model = "gemma2:27b"
 model_name = "gemma"
-host = "http://13.65.249.11:8889"
+host = "http://YourHost"
 
 # 初始化 prompt 集合
 prompt_sets = []
