@@ -19,13 +19,13 @@ tell application "Terminal"
     tmux split-window -h -t mysession:0
     tmux send-keys -t mysession 'source $ENV_PATH; python3 run_gemma2.py' C-m
 
-    # 分割畫面並運行 run_llama.py
+    # 分割畫面並運行 run_llama3.py
     tmux split-window -v -t mysession:0.0
-    tmux send-keys -t mysession 'source $ENV_PATH; python3 run_llama.py' C-m
+    tmux send-keys -t mysession 'source $ENV_PATH; python3 run_llama3.py' C-m
 
     # 分割畫面並運行 run_qwen.py
     tmux split-window -v -t mysession:0.1
-    tmux send-keys -t mysession 'source $ENV_PATH; python3 run_qwen.py' C-m
+    tmux send-keys -t mysession 'source $ENV_PATH; python3 run_qwen2.py' C-m
 
     # 分割畫面並運行 run_yi.py
     tmux split-window -h -t mysession:0.2
