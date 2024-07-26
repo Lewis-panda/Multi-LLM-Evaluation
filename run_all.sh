@@ -36,11 +36,11 @@ tell application "Terminal"
     tmux send-keys -t mysession 'source $ENV_PATH; python3 run_deepseek.py' C-m
 
     # 分割畫面並運行 run_mistral-Large.py
-    tmux split-window -v -t mysession:0.0
+    tmux split-window -v -t mysession:0.4
     tmux send-keys -t mysession 'source $ENV_PATH; python3 run_mistral-Large.py' C-m
 
     # 分割畫面並運行 run_llama3.1_70B.py
-    tmux split-window -h -t mysession:0.4
+    tmux split-window -h -t mysession:0.5
     tmux send-keys -t mysession 'source $ENV_PATH; python3 run_llama3.1_70B.py' C-m
 
     # 確保所有窗格均勻排列
